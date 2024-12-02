@@ -1,3 +1,5 @@
+// ProtectedView.js
+
 import { requireNativeComponent, Platform } from 'react-native';
 
 const LINKING_ERROR =

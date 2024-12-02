@@ -1,14 +1,9 @@
-#import <React/RCTBridgeModule.h>
+// RNProtectedViewManager.m
 
-@interface RCT_EXTERN_MODULE(ProtectedViewIos, NSObject)
+#import <React/RCTViewManager.h>
 
-RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+@interface RCT_EXTERN_MODULE(RNProtectedViewIos, RCTViewManager)
 
-+ (BOOL)requiresMainQueueSetup
-{
-  return NO;
-}
+RCT_EXPORT_VIEW_PROPERTY(options, NSNumber)
 
 @end
